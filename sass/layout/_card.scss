@@ -2,42 +2,91 @@
 // This file contains all styles related to the card
 // -----------------------------------------------------------------------------
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  padding: 2.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  color: $very-dark-grayish-blue;
+
+  box-shadow: 0 1.5rem 3rem 0.5rem $light-gray;
+
   &_daniel {
+    grid-area: dany;
+    background-color: $moderate-violet;
+    color: $light-gray;
   }
 
   &_jonathan {
+    grid-area: jonny;
+    background-color: $very-dark-grayish-blue;
+    color: $light-gray;
   }
 
   &_jeannette {
+    grid-area: jenny;
   }
 
   &_patrick {
+    grid-area: pat;
+    background-color: $very-dark-blackish-blue;
+    color: $light-grayish-blue;
   }
 
   &_kira {
+    grid-area: kira;
   }
 }
 .author {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   &__box-img {
-  }
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 10rem;
+    border: 2px solid transparent;
+    overflow: hidden;
 
-  &__data {
+    &_ev {
+      border: 2px solid rgba($white, 0.3);
+    }
+
+    &_vi {
+      border: 2px solid rgba($moderate-violet, 0.3);
+    }
+
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__name {
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: inherit;
   }
 
   &__graduation {
-  }
-
-  &__img {
+    color: inherit;
+    opacity: 0.7;
   }
 }
 .title {
   &__secondary {
+    color: inherit;
+    font-size: 2rem;
   }
 }
 .article {
   &__text {
+    opacity: 0.7;
   }
 }

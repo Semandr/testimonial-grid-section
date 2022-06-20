@@ -13,8 +13,12 @@
 }
 
 .container {
+  padding: 1rem;
+  max-width: 106rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'dany dany jonny kira'
+    'jenny pat pat kira';
   gap: 2rem 3rem;
 }
