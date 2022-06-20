@@ -16,6 +16,7 @@
 .prettierrc
 .prettierignore
 .vscode
+.gitignore
 design
 README.md
 README-template.md
