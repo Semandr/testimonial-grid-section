@@ -171,4 +171,14 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "dany dany jonny kira" "jenny pat pat kira";
   gap: 2rem 3rem;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 5rem 1rem;
+    max-width: 32.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "dany" "jonny" "jenny" "pat" "kira";
+    gap: 2rem 0;
+  }
 }/*# sourceMappingURL=main.css.map */
