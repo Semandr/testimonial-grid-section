@@ -19,6 +19,8 @@
     grid-area: dany;
     background-color: $moderate-violet;
     color: $light-gray;
+
+    position: relative;
   }
 
   &_jonathan {
@@ -40,6 +42,14 @@
   &_kira {
     grid-area: kira;
   }
+}
+.quotes {
+  position: absolute;
+  top: 0;
+  right: 7rem;
+  width: 10rem;
+  height: 10rem;
+  opacity: 0.8;
 }
 .author {
   display: flex;
@@ -83,6 +93,7 @@
   &__secondary {
     color: inherit;
     font-size: 2rem;
+    z-index: 10;
   }
 }
 .article {

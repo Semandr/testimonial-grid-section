@@ -92,6 +92,7 @@ body {
   grid-area: dany;
   background-color: hsl(263deg, 55%, 52%);
   color: hsl(0deg, 0%, 81%);
+  position: relative;
 }
 .card_jonathan {
   grid-area: jonny;
@@ -108,6 +109,15 @@ body {
 }
 .card_kira {
   grid-area: kira;
+}
+
+.quotes {
+  position: absolute;
+  top: 0;
+  right: 7rem;
+  width: 10rem;
+  height: 10rem;
+  opacity: 0.8;
 }
 
 .author {
@@ -148,6 +158,7 @@ body {
 .title__secondary {
   color: inherit;
   font-size: 2rem;
+  z-index: 10;
 }
 
 .article__text {
@@ -180,5 +191,9 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas: "dany" "jonny" "jenny" "pat" "kira";
     gap: 2rem 0;
+  }
+
+  .quotes {
+    right: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
